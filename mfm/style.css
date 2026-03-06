@@ -259,6 +259,8 @@ strong {
   margin-bottom: 16px;
 }
 
+.mobile-break { display: none; }
+
 .hero-name {
   font-family: var(--font-heading);
   font-size: clamp(3rem, 2rem + 5vw, 5.5rem);
@@ -1283,6 +1285,29 @@ strong {
     flex-direction: column-reverse;
     text-align: center;
     gap: 24px;
+  }
+
+  .mobile-break { display: inline; }
+  .kicker-separator { display: none; }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-kicker {
+    order: 1;
+    margin-bottom: 20px;
+    margin-top: 8px;
+  }
+
+  .hero-name {
+    order: 0;
+    margin-bottom: 0;
+  }
+
+  .hero-contact {
+    order: 2;
   }
 
   .hero-image img {
