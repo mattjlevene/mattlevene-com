@@ -52,9 +52,11 @@ overlay.querySelectorAll('a').forEach(link => {
 // =========================================
 // PILLAR EXPAND/COLLAPSE
 // =========================================
-document.querySelectorAll('.pillar-toggle').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const detail = btn.nextElementSibling
+document.querySelectorAll('.pillar-card').forEach(card => {
+  const btn = card.querySelector('.pillar-toggle')
+  const detail = card.querySelector('.pillar-detail')
+
+  card.addEventListener('click', () => {
     const isOpen = btn.getAttribute('aria-expanded') === 'true'
 
     if (isOpen) {

@@ -454,11 +454,14 @@ strong {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 32px 24px;
-  transition: border-color 0.3s;
+  transition: border-color 0s, box-shadow 0s;
 }
 
 .pillar-card:hover {
-  border-color: var(--border-light);
+  border-color: var(--gold);
+  box-shadow: 0 0 40px rgba(207, 170, 91, 0.35), 0 0 80px rgba(207, 170, 91, 0.15), 0 0 120px rgba(207, 170, 91, 0.05);
+  transition: border-color 0s, box-shadow 0s;
+  cursor: pointer;
 }
 
 .pillar-icon {
@@ -575,11 +578,6 @@ strong {
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: 12px;
-  transition: border-color 0.3s;
-}
-
-.win-card:hover {
-  border-color: var(--border-light);
 }
 
 .win-number {
