@@ -1282,10 +1282,32 @@ strong {
     grid-template-columns: 1fr;
   }
 
+  .hero {
+    min-height: 100svh;
+    padding: 70px 24px 60px;
+  }
+
   .hero-content {
     flex-direction: column-reverse;
     text-align: center;
-    gap: 40px;
+    gap: 24px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-image-glow {
+    inset: -15px;
+  }
+
+  .hero-name {
+    margin-bottom: 20px;
+  }
+
+  .scroll-indicator {
+    bottom: 16px;
   }
 
   .hero-contact {
